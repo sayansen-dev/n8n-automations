@@ -1,6 +1,6 @@
 # n8n Automation Portfolio
 
-**Sayan Sen — AI & Automation Developer**
+**Sayan Sen : AI & Automation Developer**
 
 A selection of automation workflows I've designed and built with [n8n](https://n8n.io), combining webhooks, third-party APIs, and LLM / AI-agent steps to take manual work off people's plates across content, CRM, and scheduling.
 
@@ -31,7 +31,7 @@ n8n · OpenAI & Anthropic (LLMs / AI agents) · LangChain agent tooling · Slack
 
 **Problem:** new website leads needed a fast human gate before landing in the CRM, with a clear audit trail.
 
-**How it works:** a website form posts to an n8n webhook, which logs the lead to Google Sheets (status: *Pending*) and sends an interactive Slack message (Block Kit) with **Approve** / **Reject** buttons. When a team member clicks, a second flow updates the original Slack message in place — showing the decision and who made it — updates the lead's status in Sheets, and, on approval, creates the lead in Zoho CRM.
+**How it works:** a website form posts to an n8n webhook, which logs the lead to Google Sheets (status: *Pending*) and sends an interactive Slack message (Block Kit) with **Approve** / **Reject** buttons. When a team member clicks, a second flow updates the original Slack message in place : showing the decision and who made it : updates the lead's status in Sheets, and, on approval, creates the lead in Zoho CRM.
 
 **Stack:** n8n · Slack (interactive Block Kit) · Google Sheets · Zoho CRM · webhooks
 
@@ -46,7 +46,7 @@ n8n · OpenAI & Anthropic (LLMs / AI agents) · LangChain agent tooling · Slack
 
 **Problem:** website visitors wanted quick answers and an easy way to book a call without leaving the chat.
 
-**How it works:** a chat message hits an AI agent (OpenAI) with a windowed conversation memory and a set of tools. It can read a Google Calendar to check availability, create a calendar event to book the meeting, and log the enquiry to Google Sheets. The agent gathers the visitor's name, email, and preferred time, confirms the details, and schedules the meeting — all inside the conversation.
+**How it works:** a chat message hits an AI agent (OpenAI) with a windowed conversation memory and a set of tools. It can read a Google Calendar to check availability, create a calendar event to book the meeting, and log the enquiry to Google Sheets. The agent gathers the visitor's name, email, and preferred time, confirms the details, and schedules the meeting : all inside the conversation.
 
 **Stack:** n8n · LangChain AI agent · OpenAI · conversation memory · Google Calendar (as an agent tool) · Google Sheets
 
@@ -59,7 +59,7 @@ n8n · OpenAI & Anthropic (LLMs / AI agents) · LangChain agent tooling · Slack
 
 **Problem:** every new blog post meant manually writing and posting separate LinkedIn and X updates.
 
-**How it works:** an RSS trigger fires on each new post. The flow extracts the post's image from the HTML, then uses OpenAI to write copy tuned to each platform — a caption for LinkedIn and a separate tweet for X. The image is fetched as binary and both posts are published automatically.
+**How it works:** an RSS trigger fires on each new post. The flow extracts the post's image from the HTML, then uses OpenAI to write copy tuned to each platform : a caption for LinkedIn and a separate tweet for X. The image is fetched as binary and both posts are published automatically.
 
 **Stack:** n8n · RSS · OpenAI · LinkedIn & X APIs · HTML parsing · binary handling
 
